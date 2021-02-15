@@ -1,3 +1,3 @@
-FROM centos:5.11
+FROM centos:6.10
 
 COPY ./yum.repos.d/ /etc/yum.repos.d/

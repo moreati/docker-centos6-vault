@@ -1,6 +1,12 @@
-# centos5-vault
+# centos6-vault
 
-On March 31, 2017, support of CentOS 5 has ended.
-And therefore, we cannot perform `yum` on CentOS 5 official images because yum repositories for CentOS 5 is deleted.
-This image rewrites yum repository urls in /etc/yum.repos.d to vault.centos.org.
-You can use this image as drop-in replacement of official `centos:5` (`centos:5.11`).
+On November 11, 2020 support for CentOS 6 ended. So we cannot use `yum` on
+CentOS 6 official images, because the yum repositories are no longer operated.
+This image replaces urls in `/etc/yum.repos.d` with https://vault.centos.org.
+Use this image as drop-in replacement for official `centos:6` (`centos:6.10`).
+
+## Credits
+
+Derived from [centos5-vault] by じゅりあす (astj)
+
+[centos5-vault]: https://github.com/astj/docker-centos5-vault
